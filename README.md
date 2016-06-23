@@ -8,8 +8,8 @@ https://www.youtube.com/watch?v=WSXOp_qYuSk
 ### Database schema
 - Employees table
 
-<img src="http://www.sromku.com/static/img/pregnancy_memorygame_preview.png"/>
+<img src="https://raw.githubusercontent.com/andreas95/ProjectManagement/master/employees_table.png"/>
 
 - Projects table
 
-<img src="http://www.sromku.com/static/img/pregnancy_memorygame_preview.png"/>
+<img src="https://raw.githubusercontent.com/andreas95/ProjectManagement/master/projects_table.png"/>
