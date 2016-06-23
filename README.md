@@ -7,7 +7,7 @@ https://www.youtube.com/watch?v=WSXOp_qYuSk
 
 ### Database schema
 - Employees table
-- 
+
 <img src="http://www.sromku.com/static/img/pregnancy_memorygame_preview.png"/>
 
 - Projects table
