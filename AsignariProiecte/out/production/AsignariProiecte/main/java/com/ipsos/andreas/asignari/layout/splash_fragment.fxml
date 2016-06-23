@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="327.0" prefWidth="493.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.ipsos.andreas.asignari.fragments.SplashFragment">
+    <children>
+        <AnchorPane layoutX="74.0" layoutY="14.0" prefHeight="327.0" prefWidth="518.0" style="-fx-background-color: #2b579a;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="16.0" fitWidth="179.0" layoutX="157.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../../resources/img/loading.GIF" />
+                    </image>
+                </ImageView>
+                <Text fx:id="TextWelcome" fill="WHITE" layoutX="45.0" layoutY="96.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome On" wrappingWidth="289.2421875">
+                    <font>
+                        <Font name="Segoe UI" size="48.0" />
+                    </font>
+                </Text>
+                <Text fx:id="TextCompany" fill="WHITE" layoutX="130.0" layoutY="127.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ipsos Interactive Services">
+                    <font>
+                        <Font name="Segoe UI" size="18.0" />
+                    </font>
+                </Text>
+                <VBox fx:id="PaneBottom" layoutX="14.0" layoutY="275.05078125" opacity="0.0" spacing="3.0">
+                    <children>
+                        <Text fill="WHITE" layoutX="14.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright @ 2016 by Antone Andreas ">
+                            <font>
+                                <Font name="Segoe UI" size="12.0" />
+                            </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="15.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From DP MKT NA 3">
+                            <font>
+                                <Font name="Segoe UI" size="12.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </VBox>
+                <Label fx:id="LabelClose" layoutX="474.0" layoutY="5.0" text="X" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Black" size="16.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

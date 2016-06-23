@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="327.0" prefWidth="493.0" stylesheets="@../../../../../../resources/css/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.ipsos.andreas.asignari.fragments.LoginFragment">
+    <children>
+        <AnchorPane layoutX="97.0" layoutY="25.0" prefHeight="327.0" prefWidth="493.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <TextField fx:id="FieldUsername" layoutX="132.0" layoutY="133.0" opacity="0.0" prefHeight="33.0" prefWidth="305.0" promptText="enter username..." />
+                <PasswordField fx:id="FieldPassword" layoutX="132.0" layoutY="173.0" opacity="0.0" prefHeight="33.0" prefWidth="305.0" promptText="enter password..." />
+                <Text fx:id="TextWelcome" fill="WHITE" layoutX="49.0" layoutY="75.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome On">
+                    <font>
+                        <Font name="Segoe UI Light" size="44.0" />
+                    </font>
+                </Text>
+                <Text fx:id="TextCompany" fill="WHITE" layoutX="94.0" layoutY="106.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ipsos Interactive Services">
+                    <font>
+                        <Font name="Segoe UI Light" size="24.0" />
+                    </font>
+                </Text>
+                <Text fx:id="TextUsername" fill="WHITE" layoutX="47.0" layoutY="155.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+                    <font>
+                        <Font name="Segoe UI" size="16.0"  />
+                    </font>
+                </Text>
+                <Text fx:id="TextPassword" fill="WHITE" layoutX="47.0" layoutY="195.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:">
+                    <font>
+                        <Font name="Segoe UI" size="16.0" />
+                    </font>
+                </Text>
+                <Button fx:id="ButtonLogin" layoutX="314.0" layoutY="215.0" mnemonicParsing="false" onAction="#validateLogin" opacity="0.0" prefHeight="33.0" prefWidth="123.0" text="Login" />
+                <Text fx:id="TextCopyright" fill="WHITE" layoutX="9.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright @ 2016 by Antone Andreas ">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                </Text>
+                <Label fx:id="LabelClose" layoutX="472.0" layoutY="5.0" text="X" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Black" size="15.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

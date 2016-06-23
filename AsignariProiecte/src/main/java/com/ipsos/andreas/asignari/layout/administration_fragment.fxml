@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<AnchorPane fx:id="PaneMain" prefHeight="749.0" prefWidth="1298.0" style="-fx-background-color: white;" stylesheets="@../../../../../../resources/css/menu_items.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.ipsos.andreas.asignari.fragments.AdministrationFragment">
+    <children>
+    <HBox fx:id="PaneTop" visible="false" spacing="10" layoutX="830.0" layoutY="47.0">
+        <children>
+            <Button fx:id="ButtonAddEmployee" mnemonicParsing="false" text="Add Employee" onAction="#addEmployee" styleClass="btn" prefHeight="27.0"/>
+            <Button fx:id="ButtonDeleteEmployee" mnemonicParsing="false" text="Delete Employee" onAction="#deleteEmployee" styleClass="btn" prefHeight="27.0"/>
+            <Button fx:id="ButtonChangePassword" mnemonicParsing="false" text="Change Password" onAction="#changePassword" styleClass="btn" prefHeight="27.0"/>
+        </children>
+    </HBox>
+
+    <GridPane fx:id="PaneAddEmployee" style="-fx-background-color: white;" layoutY="91.0" prefWidth="1310" hgap="20" vgap="20">
+    <padding><Insets top="10" right="25" bottom="25" left="10" /></padding>
+    <children>
+        <Text GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2" text="Add new employee" fill="#2b579a">
+            <font>
+                <Font name="Segoe UI Semilight" size="20.0" />
+            </font>
+        </Text>
+
+        <Text text="First Name:" fill="black" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <TextField fx:id="FieldFirstName" GridPane.rowIndex="1" GridPane.columnIndex="1" prefHeight="33.0" prefWidth="305.0" promptText="enter first name..." />
+
+        <Text text="Last Name:" fill="black" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <TextField fx:id="FieldLastName" GridPane.rowIndex="2" GridPane.columnIndex="1" prefHeight="33.0" prefWidth="305.0" promptText="enter last name.." />
+
+        <Text text="Position:" fill="black" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+        <ComboBox fx:id="ComboPosition" GridPane.rowIndex="3" GridPane.columnIndex="1" prefHeight="33.0" prefWidth="305.0" value="Data Analyst" />
+
+        <Text text="Username:" fill="black" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+        <TextField fx:id="FieldUsername" GridPane.rowIndex="4" GridPane.columnIndex="1" prefHeight="33.0" prefWidth="305.0" promptText="enter username..." />
+
+        <Text text="Password:" fill="black" GridPane.rowIndex="5" GridPane.columnIndex="0" />
+        <PasswordField fx:id="FieldPassword" GridPane.rowIndex="5" GridPane.columnIndex="1" prefHeight="33.0" prefWidth="305.0" promptText="enter password..." />
+
+        <Text text="Password again:" fill="black" GridPane.rowIndex="6" GridPane.columnIndex="0" />
+        <PasswordField fx:id="FieldPasswordAgain" GridPane.rowIndex="6" GridPane.columnIndex="1" prefHeight="33.0" prefWidth="305.0" promptText="enter password..." />
+
+        <HBox alignment="BOTTOM_RIGHT" GridPane.rowIndex="7" GridPane.columnIndex="1">
+            <children>
+                <Button fx:id="ButtonAdd" text="Save" styleClass="btn" mnemonicParsing="false" onAction="#setAdd" prefHeight="27.0" prefWidth="98.0"/>
+            </children>
+        </HBox>
+    </children>
+    </GridPane>
+
+    <GridPane fx:id="PaneDeleteEmployee" style="-fx-background-color: white;" layoutY="91.0" prefWidth="1310" hgap="20" vgap="20">
+        <padding><Insets top="10" right="25" bottom="25" left="10" /></padding>
+        <children>
+            <Text GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2" text="Delete employee" fill="#2b579a">
+                <font>
+                    <Font name="Segoe UI Semilight" size="20.0" />
+                </font>
+            </Text>
+
+            <Text text="Username:" fill="black" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+            <TextField fx:id="FieldUserDelete" GridPane.rowIndex="1" GridPane.columnIndex="1" prefHeight="33.0" prefWidth="305.0" promptText="enter username..." />
+
+            <HBox alignment="BOTTOM_RIGHT" GridPane.rowIndex="2" GridPane.columnIndex="1">
+                <children>
+                    <Button fx:id="ButtonDelete" text="Delete" styleClass="btn" mnemonicParsing="false" onAction="#setDelete" prefHeight="27.0" prefWidth="98.0"/>
+                </children>
+            </HBox>
+        </children>
+    </GridPane>
+
+    <GridPane fx:id="PaneChangePassword" style="-fx-background-color: white;" layoutY="91.0" prefWidth="1310" hgap="20" vgap="20">
+        <padding><Insets top="30" right="25" bottom="25" left="20" /></padding>
+        <children>
+            <Text GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="2" text="Change your password" fill="#2b579a">
+                <font>
+                    <Font name="Segoe UI Semilight" size="20.0" />
+                </font>
+            </Text>
+
+            <Text text="Old password:" fill="black" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <PasswordField fx:id="FieldOldPassword" prefHeight="33.0" prefWidth="305.0" promptText="enter password..." GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+            <Text text="New password:" fill="black" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <PasswordField fx:id="FieldNewPassword" prefHeight="33.0" prefWidth="305.0" promptText="enter password..." GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+            <Text text="Confirm password:" fill="black" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <PasswordField fx:id="FieldConfirmPassword" prefHeight="33.0" prefWidth="305.0" promptText="enter password..." GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+            <HBox alignment="BOTTOM_RIGHT" GridPane.rowIndex="4" GridPane.columnIndex="1">
+                <children>
+                    <Button fx:id="ButtonSave" text="Save" styleClass="btn" mnemonicParsing="false" onAction="#setPassword" prefHeight="27.0" prefWidth="98.0"/>
+                </children>
+            </HBox>
+
+        </children>
+    </GridPane>
+
+        <Separator layoutY="73.0" prefHeight="0.0" prefWidth="1298.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+        <Text fill="#2b579a" layoutX="14.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administration account">
+            <font>
+                <Font name="Segoe UI Semilight" size="40.0" />
+            </font>
+        </Text>
+        <ImageView fx:id="ImageLoading" fitHeight="33.0" fitWidth="40.0" layoutX="470.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../../../../../../resources/img/menu/loading.GIF" />
+            </image>
+        </ImageView>
+        <ProgressBar fx:id="ProgressLoading" layoutY="73.0" prefHeight="3.0" prefWidth="1298.0" progress="0.0" />
+    </children>
+</AnchorPane>

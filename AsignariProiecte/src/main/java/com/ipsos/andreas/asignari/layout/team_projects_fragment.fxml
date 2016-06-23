@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.geometry.Insets?>
+<AnchorPane fx:id="PaneMain" prefHeight="749.0" prefWidth="1298.0" style="-fx-background-color: white;" stylesheets="@../../../../../../resources/css/menu_items.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.ipsos.andreas.asignari.fragments.TeamProjectsFragment">
+    <children>
+        <GridPane fx:id="PaneTabel" visible="false" style="-fx-background-color: white;" layoutY="91.0" prefWidth="1310" hgap="20" vgap="20">
+            <padding><Insets top="10" right="25" bottom="25" left="10" /></padding>
+            <children>
+                <HBox fx:id="PaneSearch" GridPane.rowIndex="0" GridPane.columnIndex="0" spacing="10" alignment="BASELINE_CENTER">
+                    <children>
+                        <Text text="Search"  fill="black" />
+                        <TextField fx:id="FieldSearch" prefWidth="250.0" prefHeight="27.0" promptText="enter text..." />
+                        <Text text="in"  fill="black" />
+                        <ComboBox fx:id="ComboSearch" prefWidth="170.0" prefHeight="27.0" />
+                        <Text text="show"  fill="black" />
+                        <ComboBox fx:id="ComboSearchShow" prefWidth="100.0" prefHeight="27.0" />
+                        <Button fx:id="ButtonSearch2" mnemonicParsing="false" text="Search" onAction="#searchInTables" styleClass="btn" prefHeight="27.0"/>
+                    </children>
+                </HBox>
+                <TableView fx:id="TableProjects" GridPane.rowIndex="1" GridPane.columnIndex="0" editable="false">
+                    <columns>
+                        <TableColumn fx:id="ColumnStatus" text="Status">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnAssignDate" text="Assign Date">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnDP_RO" text="DP RO">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnDP_NA" text="DP NA">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnJobNumber" text="Job Number">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnJobTitle" text="Job Title">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnJobType" text="Job Type">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnClient" text="Client">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnCS" text="CS">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnFieldStart" text="Field Start">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnFieldEnd" text="Field End">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnCheckIpsos" text="Check Ipsos">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnCheckCS" text="Check CS">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnFinalCheckIpsos" text="Final Check Ipsos">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnFinalCheckCS" text="Final Check CS">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnAnalyticsToCS" text="Analytics to CS">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnOtherDeliverables" text="Others deliverables">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnVendorBudget" text="Vendor Budget">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnOverseeBudget" text="Oversee Budget">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnReserveBudget" text="Reserve Budget">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                        <TableColumn fx:id="ColumnIquoteBudget" text="IQuote Budget">
+                            <graphic>
+                                <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                                    <image>
+                                        <Image url="@../../../../../../resources/img/menu/tabel.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+            </children>
+        </GridPane>
+
+        <Text fx:id="TextEmptyTable" text="You don't have projects in database." fill="black" visible="false" style="-fx-background-color: white;" layoutX="100.0" layoutY="150.0">
+            <font>
+                <Font name="Segoe UI Semilight" size="20.0" />
+            </font>
+        </Text>
+
+        <HBox fx:id="PaneTop" visible="false" spacing="10" layoutX="1200.0" layoutY="47.0">
+            <children>
+                <Button fx:id="ButtonSearch" mnemonicParsing="false" text="Search" onAction="#showSearch" styleClass="btn" prefHeight="27.0"/>
+            </children>
+        </HBox>
+        <Separator layoutY="73.0" prefHeight="0.0" prefWidth="1298.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+        <Text fill="#2b579a" layoutX="14.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Team Projects">
+            <font>
+                <Font name="Segoe UI Semilight" size="40.0" />
+            </font>
+        </Text>
+        <ImageView fx:id="ImageLoading" fitHeight="33.0" fitWidth="40.0" layoutX="300.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../../../../../../resources/img/menu/loading.GIF" />
+            </image>
+        </ImageView>
+        <ProgressBar fx:id="ProgressLoading" layoutY="73.0" prefHeight="3.0" prefWidth="1298.0" progress="0.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane id="AnchorPane" prefHeight="749.0" prefWidth="1298.0" style="-fx-background-color: white;" stylesheets="@../../../../../../resources/css/menu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.ipsos.andreas.asignari.fragments.AboutFragment">
+    <children>
+        <Separator layoutY="73.0" prefHeight="0.0" prefWidth="1298.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+        <Text fill="#2b579a" layoutX="14.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About Application">
+            <font>
+                <Font name="Segoe UI Semilight" size="40.0" />
+            </font>
+        </Text>
+        <Text fx:id="test" fill="#000" layoutX="14.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO DO...">
+            <font>
+                <Font name="Segoe UI Semilight" size="20.0" />
+            </font>
+        </Text>
+        <ImageView fx:id="ImageLoading" fitHeight="33.0" fitWidth="40.0" layoutX="370.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../../../../../../resources/img/menu/loading.GIF" />
+            </image>
+        </ImageView>
+        <ProgressBar fx:id="ProgressLoading" layoutY="73.0" prefHeight="3.0" prefWidth="1298.0" progress="0.0" />
+    </children>
+</AnchorPane>
